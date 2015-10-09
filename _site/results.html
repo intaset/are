@@ -74,7 +74,7 @@
 			<gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
 		</div>
 
-		<div class="nav">
+		<div class="nav2">
 			<nav>
 				<a href="/">Home</a>
 				<a href="http://amss.avestia.com/">Submission</a>
@@ -104,6 +104,34 @@
       </div>
     </div> <!-- Mobile -->
   </header>
+
+  <div class="j-header">
+  <div class="name">
+    <h1>Advances in Renewable Energy (ARE)</h1>
+    <!-- <p class="body">ISSN:</p> -->
+    <a href="/openaccess" target="blank" title="Avestia's Open Access">
+          <img src="img/j-oa.png" border="0" onmouseover="this.src='img/j-oa-hover.png'" onmouseout="this.src='img/j-oa.png'" class="j-oa">
+    </a>
+  </div>
+
+    <img src="img/journals/j-are.jpg" class="j-img">
+</div>
+  <div role="navigation" class="navbar navbar-default">
+  <ul>
+    <li><a href="">Journal Home</a></li>
+    <li><a href="">Aims & Scopes</a></li>
+    <li><a href="">Publishing Fee</a></li>
+    <li><a href="">Editorial Board</a></li>
+    <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
+    <li><a href="">Contact Us</a></li>
+  </ul>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="/">Volume 1</a></li>
+      <li><a href="/">Current Volume</a></li>
+    </ul>
+  </div><!--/.nav-collapse -->
+</div>
 
   <div class="grid">
    <div class="main-content">
@@ -202,6 +230,7 @@
 <script defer src="js/demo.js"></script>
 <script defer src="js/jquery.flexslider.js"></script>
 <script type="text/javascript" src="css/animate.min.css"></script>
+<script type="text/javascript" src="js/jnav.js"></script>
 
 <script type="text/javascript">
 <!--
@@ -264,6 +293,42 @@ slideshow: false,
   }
 
 }).call(this);
+</script>
+<script>
+$(function(){
+if($('.nav>ul>li').hasClass('selected')){
+$('.selected').addClass('active');
+var currentleft=$('.selected').position().left+"px";
+var currentwidth=$('.selected').css('width');
+$('.lamp').css({"left":currentleft,"width":currentwidth});
+}
+else{
+  $('.nav>ul>li').first().addClass('active');
+  var currentleft=$('.active').position().left+"px";
+var currentwidth=$('.active').css('width');
+$('.lamp').css({"left":currentleft,"width":currentwidth});
+}
+$('.nav>ul>li').hover(function(){
+  $('.nav ul li').removeClass('active');
+  $(this).addClass('active');
+var currentleft=$('.active').position().left+"px";
+var currentwidth=$('.active').css('width');
+$('.lamp').css({"left":currentleft,"width":currentwidth});
+},function(){
+if($('.nav>ul>li').hasClass('selected')){
+$('.selected').addClass('active');
+var currentleft=$('.selected').position().left+"px";
+var currentwidth=$('.selected').css('width');
+$('.lamp').css({"left":currentleft,"width":currentwidth});
+}
+else{
+  $('.nav>ul>li').first().addClass('active');
+  var currentleft=$('.active').position().left+"px";
+var currentwidth=$('.active').css('width');
+$('.lamp').css({"left":currentleft,"width":currentwidth});
+}
+});
+});
 </script>
 </body>
 </html>
