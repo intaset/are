@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="robots" content="noarchive">
-<meta name="description" content="Avestia's Publishing is a fast growing academic publication platform for professors, researchers, students, and the public sector.">
-<meta name="keywords" content="avestia, publishing, journals, papers, science">
-<title>Avestia Publishing - Contact Us</title>
+<meta name="description" content="Contact ARE Journal with any inquiries.">
+<meta name="keywords" content="avestia, publishing, journals, papers, science, renewable energy">
+<title>ARE - Contact Us</title>
 
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="240">
@@ -20,6 +20,16 @@
 <script src="js/modernizr.custom.63321.js"></script>
 <script type="text/javascript" src="mostvisited.js"></script> 
 <script type="text/javascript" src="mostvisitedExt.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54026601-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <script>
   (function() {
     var cx = '016656741306535874023:f_iiykae6ri';
@@ -118,32 +128,31 @@
 </div>
   <div role="navigation" class="navbar navbar-default">
   <ul>
-    <li><a href="">Journal Home</a></li>
-    <li><a href="">Aims & Scopes</a></li>
-    <li><a href="">Publishing Fee</a></li>
-    <li><a href="">Editorial Board</a></li>
+    <li><a href="/">Journal Home</a></li>
+    <li><a href="/aims">Aims & Scopes</a></li>
+    <li><a href="/fee">Publishing Fee</a></li>
+    <li><a href="/board">Editorial Board</a></li>
     <li><button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">Volumes</button></li>
-    <li><a href="">Contact Us</a></li>
+    <li><a href="/contact">Contact Us</a></li>
   </ul>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <li><a href="/">Volume 1</a></li>
-      <li><a href="/">Current Volume</a></li>
+      <li><a href="/volume1">Volume 1</a></li>
+      <li><a href="/current">Current Volume</a></li>
     </ul>
   </div><!--/.nav-collapse -->
 </div>
 
   <div class="grid">
-   <div class="main-content">
-<div class="unit unit-s-1 unit-m-1 unit-l-1">
-  	<div class="content">
-  		<h2>Contact Us</h2>
-  		<p class="body">To contact Avestia Publishing, please fill out the form below:</p>
+   <div class="unit unit-s-1 unit-m-1 unit-l-1">
+  <div class="main-content j-home">
+      <h2>Contact Us</h2>
+      <p class="body">In order to contact ARE, please fill out the form below:</p>
 
   		<form class="contactform" action="contact.php" method="post">
         <p class="body">Name:</p><span id="sprytextfield4"><input name="Name" type="text" id="Name"></span><br>
 			 
-			  <p class="body">Email:</p><span id="sprytextfield5"><input name="Email" type="text" id="Email"></span><br>
+		<p class="body">Email:</p><span id="sprytextfield5"><input name="Email" type="text" id="Email"></span><br>
 
         <p class="body">Confirm Email:</p><span id="spryconfirm1"><input name="Confirm Email" type="text" id="Confirm Email"></span><br>
 
@@ -156,17 +165,10 @@
     		<input type="reset" name="Reset" value="Reset" class="form_button">
 	  	</form><br>
 
-	  	<p class="body">Or please feel free to write an email to <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a></p>
+	  	<p class="body">Or please feel free to write an email to <a href="mailto:are@avestia.com" class="body-link">are@avestia.com</a></p>
 
 	  	<p class="body">Or call +1 613 - 695 - 3040</p>
-
-	  	<p class="body">Or write to:<br>
-	  	Avestia Publishing<br>
-	  	Unit. 417, 1376 Bank St.<br>
-	  	Ottawa, ON, Canada<br>
-	  	K1H 7Y3</p>
-  	</div>
-</div>
+  </div> <!-- Main Content -->
 </div>
   </div>
 
@@ -199,7 +201,13 @@
 
 	<div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
 		<div class="unit-spacer social">
-
+		<form class="subscribe" action="subscribe.php" method="post">
+           	<span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+           		onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+ 				onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+			<input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
 			<div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
 				<a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
 					<img src="img/fb.png" border="0" onmouseover="this.src='img/fb-hover.png'" onmouseout="this.src='img/fb.png'">
@@ -313,42 +321,6 @@ slideshow: false,
   }
 
 }).call(this);
-</script>
-<script>
-$(function(){
-if($('.nav>ul>li').hasClass('selected')){
-$('.selected').addClass('active');
-var currentleft=$('.selected').position().left+"px";
-var currentwidth=$('.selected').css('width');
-$('.lamp').css({"left":currentleft,"width":currentwidth});
-}
-else{
-  $('.nav>ul>li').first().addClass('active');
-  var currentleft=$('.active').position().left+"px";
-var currentwidth=$('.active').css('width');
-$('.lamp').css({"left":currentleft,"width":currentwidth});
-}
-$('.nav>ul>li').hover(function(){
-  $('.nav ul li').removeClass('active');
-  $(this).addClass('active');
-var currentleft=$('.active').position().left+"px";
-var currentwidth=$('.active').css('width');
-$('.lamp').css({"left":currentleft,"width":currentwidth});
-},function(){
-if($('.nav>ul>li').hasClass('selected')){
-$('.selected').addClass('active');
-var currentleft=$('.selected').position().left+"px";
-var currentwidth=$('.selected').css('width');
-$('.lamp').css({"left":currentleft,"width":currentwidth});
-}
-else{
-  $('.nav>ul>li').first().addClass('active');
-  var currentleft=$('.active').position().left+"px";
-var currentwidth=$('.active').css('width');
-$('.lamp').css({"left":currentleft,"width":currentwidth});
-}
-});
-});
 </script>
 </body>
 </html>

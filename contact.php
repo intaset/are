@@ -1,6 +1,6 @@
 <?php
 
-$my_email = "info@avestia.com";
+$my_email = "are@avestia.com";
 
 /*
 
@@ -218,6 +218,8 @@ mail($my_email,$subject,$message,$headers);
     </div> <!-- Mobile -->
   </header>
 
+  <div class="grid">
+    <div class="unit unit-s-1 unit-m-1 unit-l-1">
   <div class="main-content content php">
    <h2>Contact Avestia Publishing</h2>
    <p class="body">Thank you for your message!</p>
@@ -234,8 +236,10 @@ mail($my_email,$subject,$message,$headers);
     <p class="body">&nbsp;</p>
     <p class="body">&nbsp;</p>
   </div>
+</div>
+</div>
 
-  <footer>
+<footer>
 <div class="grid">
   <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
     <div class="unit-spacer">
@@ -264,7 +268,13 @@ mail($my_email,$subject,$message,$headers);
 
   <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
     <div class="unit-spacer social">
-
+    <form class="subscribe" action="../subscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
+              onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
+        onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
+        
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
           <img src="img/fb.png" border="0" onmouseover="this.src='img/fb-hover.png'" onmouseout="this.src='img/fb.png'">
