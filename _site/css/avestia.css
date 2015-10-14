@@ -1144,10 +1144,6 @@ padding-bottom: 0;
   margin: 1em 0;
 }
 
-.eic .body {
-  text-align: center;
-}
-
 .eic2 {
   border-top: none;
   padding: 0 0 1em;
@@ -1727,6 +1723,10 @@ h2 {
 }
 .m-recent .border {
   border: 0;
+}
+.eic .link {
+    padding: 22px 0;
+    text-align: right;
 }
 }
 
