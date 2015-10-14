@@ -13,7 +13,7 @@ $counter = 0;
 
 for ($i=2;$i<sizeof($arr);$i++){
 
-	if ($arr[$i]=='/' and $arr[$i-1]=='"' and $arr[$i+1]!='"' and $counter != 10){
+	if ($arr[$i]=='/' and $arr[$i-1]=='"' and $arr[$i+1]!='"' and $counter != 5){
 
     	while ($arr[$i+1]!=','){
 
@@ -37,7 +37,7 @@ $counter = 0;
 
 for ($i=2;$i<sizeof($arr);$i++){
 
-	if ($arr[$i]=='-' and $arr[$i-7]=='"' and $arr[$i-9]==',' and $arr[$i-10]=='"' and $counter != 10){
+	if ($arr[$i]=='-' and $arr[$i-7]=='"' and $arr[$i-9]==',' and $arr[$i-10]=='"' and $counter != 5){
 
     	while ($arr[$i+2]!= ',' or $arr[$i+1]!= '"'){
 
@@ -115,61 +115,6 @@ while($row = mysql_fetch_array($result)) {
 
 	if ($row['journal'] == 'IJTAN'){
 		if($allLinksExploded[4] == $row['link']){
-			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
-		}
-	}
-}
-
-$result = mysql_query("SELECT * FROM mostVisited");
-
-while($row = mysql_fetch_array($result)) {
-
-	if ($row['journal'] == 'IJTAN'){
-		if($allLinksExploded[5] == $row['link']){
-			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
-		}
-	}
-}
-
-$result = mysql_query("SELECT * FROM mostVisited");
-
-while($row = mysql_fetch_array($result)) {
-
-	if ($row['journal'] == 'IJTAN'){
-		if($allLinksExploded[6] == $row['link']){
-			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
-		}
-	}
-}
-
-$result = mysql_query("SELECT * FROM mostVisited");
-
-while($row = mysql_fetch_array($result)) {
-
-	if ($row['journal'] == 'IJTAN'){
-		if($allLinksExploded[7] == $row['link']){
-			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
-		}
-	}
-}
-
-$result = mysql_query("SELECT * FROM mostVisited");
-
-while($row = mysql_fetch_array($result)) {
-
-	if ($row['journal'] == 'IJTAN'){
-		if($allLinksExploded[8] == $row['link']){
-			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
-		}
-	}
-}
-
-$result = mysql_query("SELECT * FROM mostVisited");
-
-while($row = mysql_fetch_array($result)) {
-
-	if ($row['journal'] == 'IJTAN'){
-		if($allLinksExploded[9] == $row['link']){
 			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
 		}
 	}
