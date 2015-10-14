@@ -807,7 +807,7 @@ input.gsc-input {
 input.gsc-input {
     padding: 1px 6px;
     border: 1px solid #FFF!important;
-    width: 100%;
+    width: 100%!important;
 }
 
 .cse input.gsc-search-button, input.gsc-search-button {
@@ -1089,17 +1089,18 @@ display: none;
   display: block;
   width: 100%;
   padding-top: 1em;
+  max-width: 340px;
 }
 
 .name {
-    width: 35%;
+    width: 100%;
     float: left;
     padding: 1em;
 }
 
 .j-img {
     display: block;
-    width: 65%;
+    width: 100%;
 }
 
 .r-news {
@@ -1161,6 +1162,7 @@ padding-bottom: 0;
     display: block;
     width: 60%;
     margin: 0 auto;
+    max-width: 120px;
 }
 
 .j-link {
@@ -1692,6 +1694,13 @@ h2 {
 .j-home {
   padding: 2em;
 }
+.name {
+    width: 35%;
+}
+
+.j-img {
+    width: 65%;
+}
 }
 
 /* 881 PX */
@@ -1752,10 +1761,6 @@ h2 {
 
   .journals div {
     margin: 3px;
-}
-.j-oa {
-    width: 80%;
-    max-width: 340px;
 }
 
 .subscribe #email {
