@@ -1075,6 +1075,7 @@ display: none;
 }
 .j-header {
     background-color: #F48120;
+    text-align: center;
 }
 .j-header h1 {
     color: #fecca9;
@@ -1083,13 +1084,16 @@ display: none;
     font-size: 1.1em!important;
     padding: 0;
     line-height: normal;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .j-oa {
   display: block;
-  width: 100%;
+  width: 50%;
   padding-top: 1em;
-  max-width: 340px;
+  max-width: 180px;
+  margin: 0 auto;
 }
 
 .name {
@@ -1140,8 +1144,8 @@ padding-bottom: 0;
   margin: 1em 0;
 }
 
-.eic .body-link {
-    float: none;
+.eic .body {
+  text-align: center;
 }
 
 .eic2 {
@@ -1218,7 +1222,7 @@ padding-bottom: 0;
 }
 
 .border {
-    border: 1px solid #F48120;
+    border-bottom: 2px solid #F48120;
     margin-bottom: 1em;
 }
 
@@ -1254,7 +1258,7 @@ figure {
     color: #000;
 }
 
-table {
+.widetable table {
     width: 80%;
     text-align: center;
 }
@@ -1518,8 +1522,24 @@ footer .grid {
 	body.menu-active div#content {
     	right: 220px;
 	}
+  .j-header {
+    text-align: left;
+  }
+
   .j-header h1 {
     font-size: 1.25em!important;
+    padding: 10px 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .j-oa {
+    display: inline-block;
+    width: 25%;
+    padding-top: 0;
+    max-width: 180px;
+    float: right;
+    margin: 0;
   }
 }
 
@@ -1666,11 +1686,15 @@ h2 {
 
   .j-header h1 {
     font-size: 1.8em!important;
+    padding: 0;
   }
-  .eic .body-link {
-    float: right;
-}
-
+  .j-oa {
+    display: inline-block;
+    width: 80%;
+    padding-top: 1em;
+    max-width: 280px;
+    float: none;
+  }
 .eic2 .body-link {
   float: none;
 }
@@ -1700,6 +1724,9 @@ h2 {
 
 .j-img {
     width: 65%;
+}
+.m-recent .border {
+  border: 0;
 }
 }
 
@@ -1829,6 +1856,26 @@ h2 {
     padding: 3em;
 }
 }
+
+/* 1300 PX */
+@media only screen and (min-width: 81em) {
+  .j-header {
+    background-color: #F48120;
+    min-height: 430px;
+    background: url(../img/journals/j-are.jpg) center center;
+    background-size: cover;
+  }
+  .name {
+    width: 35%;
+    float: none; 
+    background-color: #F48120;
+    min-height: 430px;
+  }
+  .j-img {
+    display: none;
+  }
+}
+
 
 /* 1380 PX */
 @media only screen and (min-width: 86em){
