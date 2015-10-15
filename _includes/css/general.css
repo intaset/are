@@ -556,6 +556,8 @@ input.gsc-input {
 @-moz-document url-prefix() {
 .cse input.gsc-search-button, input.gsc-search-button {
     padding: 3px 5px !important;
+    border-radius: 0!important;
+    height: 22px!important;
   }
 }
 
@@ -837,6 +839,15 @@ display: none;
     width: 100%;
 }
 
+@-moz-document url-prefix() {
+  .j-img {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+
+
 .r-news {
     padding-bottom: 1em;
 }
@@ -872,6 +883,20 @@ padding-bottom: 0;
   border-top: 2px solid #F48120;
   padding: 1em;
   margin: 1em 0;
+}
+
+.eic .body {
+  vertical-align: middle;
+  padding-bottom: 0;
+  width: 100%;
+  display: inline-block;
+}
+
+.eic .body-link {
+  vertical-align: middle;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
 }
 
 .eic2 {
@@ -935,7 +960,7 @@ padding-bottom: 0;
 }
 
 .a-link {
-  text-align: right;
+  text-align: left;
   padding-bottom: 1em;
 }
 
@@ -966,6 +991,11 @@ figure {
     font-weight: 100;
     font-size: 0.9em;
     padding-bottom: 1em;
+    text-indent: 0;
+}
+
+.equation {
+    text-indent: 0;
 }
 
 .eqn {
@@ -989,9 +1019,11 @@ figure {
     text-align: center;
 }
 
-.widetable caption {
-    font-weight: 100;
+.widetable .body {
     font-size: 0.9em;
+    text-align: center;
+    padding-bottom: 0em;
+    text-indent: 0;
 }
 
 .widetable tbody {
@@ -1000,6 +1032,7 @@ figure {
 
 .widetable {
     padding-bottom: 1em;
+    overflow: auto;
 }
 .ref {
   text-indent: 0;
@@ -1254,18 +1287,25 @@ footer .grid {
 
   .j-header h1 {
     font-size: 1.25em!important;
-    padding: 10px 0;
+    padding: 0;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
+    width: 69%;
   }
 
   .j-oa {
     display: inline-block;
-    width: 25%;
+    width: 85%;
     padding-top: 0;
     max-width: 180px;
-    float: right;
     margin: 0;
+    vertical-align: middle;
+  }
+
+  .oalink {
+    width: 30%;
+    display: inline-block;
+    text-align: right;
   }
 }
 
@@ -1413,13 +1453,18 @@ h2 {
   .j-header h1 {
     font-size: 1.8em!important;
     padding: 0;
+    width: 100%
   }
   .j-oa {
     display: inline-block;
     width: 80%;
     padding-top: 1em;
     max-width: 280px;
-    float: none;
+  }
+  .oalink {
+    width: 100%;
+    display: block;
+    text-align: left;
   }
 .eic2 .body-link {
   float: none;
@@ -1454,9 +1499,28 @@ h2 {
 .m-recent .border {
   border: 0;
 }
-.eic .link {
-    padding: 22px 0;
-    text-align: right;
+.eic .body {
+  vertical-align: middle;
+  padding-bottom: 0;
+  width: 49%;
+  display: inline-block;
+}
+
+.eic .body-link {
+  vertical-align: middle;
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+.a-link {
+  text-align: right;
+}
+}
+
+/* 768PX - 881 PX */
+@media only screen and (min-width: 48em) and (max-width: 51.6em) {
+.j-link {
+    font-size: 0.9em;
 }
 }
 
@@ -1566,9 +1630,6 @@ h2 {
   .subscribe #email {
     width: 72%;
 }
-.j-header h1 {
-    font-size: 2.2em!important;
-}
 }
 
 /* 1280 PX */
@@ -1619,9 +1680,6 @@ h2 {
 .journals div {
     margin: 4.2px;
 }
-.j-header h1 {
-    font-size: 2.5em!important;
-}
 .j-oa {
     padding-top: 2em;
 }
@@ -1634,9 +1692,6 @@ h2 {
   }
   .journals div {
     margin: 4.5px;
-}
-.j-header h1 {
-    font-size: 2.8em!important;
 }
 }
 
