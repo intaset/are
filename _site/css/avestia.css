@@ -339,6 +339,13 @@ body {
 	width: 100%;
 }
 
+.article-img {
+  display: block;
+  width: 100%;
+  max-width: 410px;
+  margin: 0 auto;
+}
+
 .left-img {
     display: block;
     width: 30%;
