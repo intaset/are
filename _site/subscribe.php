@@ -251,14 +251,14 @@ if ($emailcheck2 != 0) {
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/cbpAnimatedHeader.min.js"></script>
-    <script src="js/SpryValidationSelect.js" type="text/javascript"></script>
+    <script src="SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationTextField.js" type="text/javascript"></script>
+    <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationConfirm.js" type="text/javascript"></script>
+    <script src="SpryAssets/SpryValidationConfirm.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationCheckbox.js" type="text/javascript"></script>
-    <script src="js/SpryValidationTextarea.js" type="text/javascript"></script>
+    <script src="SpryAssets/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
 
 <script src="js/classie.js"></script>
 <script src="js/jquery.easing.js"></script>
@@ -598,14 +598,14 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/cbpAnimatedHeader.min.js"></script>
-    <script src="js/SpryValidationSelect.js" type="text/javascript"></script>
+    <script src="SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationTextField.js" type="text/javascript"></script>
+    <script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationConfirm.js" type="text/javascript"></script>
+    <script src="SpryAssets/SpryValidationConfirm.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationCheckbox.js" type="text/javascript"></script>
-    <script src="js/SpryValidationTextarea.js" type="text/javascript"></script>
+    <script src="SpryAssets/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
 
 <script src="js/classie.js"></script>
 <script src="js/jquery.easing.js"></script>

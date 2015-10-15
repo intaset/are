@@ -32,8 +32,7 @@
 
  /* When the widget is in the valid state the INPUT has a green background applied on it. */
 .confirmValidState input, input.confirmValidState {
-	background-color: #454444;
-	  border: 0;
+	background-color: #c9f9de;
 }
 
 /* When the widget is in an invalid state the INPUT has a red background applied on it. */
@@ -41,7 +40,6 @@ input.confirmRequiredState, .confirmRequiredState input,
 input.confirmInvalidState, .confirmInvalidState input
 {
 	background-color: #454444;
-	  border: 0;
 }
 
 /* When the widget has received focus, the INPUT has a yellow background applied on it. */

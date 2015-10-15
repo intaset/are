@@ -1,11 +1,11 @@
 ---
 ---
 
-{% include css/SpryAssets/SpryValidationSelect.css %}
-{% include css/SpryAssets/SpryValidationTextField.css %}
-{% include css/SpryAssets/SpryValidationConfirm.css %}
-{% include css/SpryAssets/SpryValidationCheckbox.css %}
-{% include css/SpryAssets/SpryValidationTextarea.css %}
+{% include css/SpryValidationSelect.css %}
+{% include css/SpryValidationTextField.css %}
+{% include css/SpryValidationConfirm.css %}
+{% include css/SpryValidationCheckbox.css %}
+{% include css/SpryValidationTextarea.css %}
 {% include css/general.css %}
 {% include css/grid.css %}
 {% include css/flexslider.css %}

@@ -913,7 +913,12 @@ padding-bottom: 0;
 }
 
 .eic2 .body-link {
-  float: none;
+  width: 90%!important;
+  text-align: center!important;
+}
+
+.eic2 .body {
+  width: 100%!important;
 }
 
 .board .body {
@@ -935,6 +940,7 @@ padding-bottom: 0;
     color: #FFF;
     padding: 1em;
     margin-bottom: 1em;
+    font-size: 0.7em;
     transition: all 0.8s ease;
 }
 
@@ -1128,7 +1134,8 @@ figure {
     border: #47A4AD 1px solid;
     background-color: transparent;
     color: #47A4AD;
-    padding: 1px 0.5em;
+    padding: 3.5px 0.5em;
+    font-size: 0.7em;
 }
 
 .subscribe .form_button {
@@ -1314,6 +1321,10 @@ footer .grid {
     display: inline-block;
     text-align: right;
   }
+  .subscribe #email {
+    padding: 1px 0.5em;
+    font-size: 1em;
+  }
 }
 
 /* 768 PX */
@@ -1473,10 +1484,6 @@ h2 {
     display: block;
     text-align: left;
   }
-.eic2 .body-link {
-  float: none;
-}
-
 .topics {
     -moz-column-count: 2;
     -moz-column-gap: 20px;
@@ -1525,7 +1532,7 @@ h2 {
 }
 
 /* 768PX - 881 PX */
-@media only screen and (min-width: 48em) and (max-width: 51.6em) {
+@media only screen and (min-width: 25.8em) and (max-width: 55.06em) {
 .j-link {
     font-size: 0.9em;
 }
@@ -1554,6 +1561,9 @@ h2 {
   .navbar-toggle {
     font-size: 1em;
     padding: 0 1em;
+  }
+  .j-link {
+    font-size: 1em;
   }
 }
 

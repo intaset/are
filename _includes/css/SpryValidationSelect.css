@@ -32,15 +32,13 @@
  
 /* When the widget is in the valid state the SELECT has a green background applied on it. */
 .selectValidState select, select.selectValidState {
-	background-color: #454444;
-	  border: 0;
+	background-color: #c9f9de;
 }
 
 /* When the widget is in an invalid state the SELECT has a red background applied on it. */
 select.selectRequiredState, .selectRequiredState select,
 select.selectInvalidState, .selectInvalidState select {
 	background-color: #454444;
-	  border: 0;
 }
 
 /* When the widget has received focus, the SELECT has a yellow background applied on it. */
