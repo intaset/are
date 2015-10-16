@@ -854,6 +854,35 @@ display: none;
   }
 }
 
+.j-header-article {
+    background-color: #F48120;
+    text-align: center;
+}
+.j-header-article h1 {
+    color: #fecca9;
+    font-weight: 600;
+    text-transform: inherit;
+    font-size: 1.1em!important;
+    padding: 0;
+    line-height: normal;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.j-header-article .j-oa {
+  display: block;
+  width: 50%;
+  padding-top: 1em;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.j-header-article .name {
+    width: 100%;
+    padding: 1em;
+    float: none;
+    min-height: auto;
+}
 
 .r-news {
     padding-bottom: 1em;
@@ -1030,6 +1059,7 @@ figure {
 .widetable table {
     width: 80%;
     text-align: center;
+    border: 1px solid;
 }
 
 .widetable .body {
@@ -1039,8 +1069,18 @@ figure {
     text-indent: 0;
 }
 
-.widetable tbody {
+.widetable tbody,
+.widetable thead {
     text-indent: 0;
+}
+
+.widetable thead {
+    background-color: #ccc;
+}
+
+.widetable td {
+    border: 1px solid;
+    padding: 5px;
 }
 
 .widetable {
@@ -1321,6 +1361,34 @@ footer .grid {
     display: inline-block;
     text-align: right;
   }
+  .j-header-article {
+    text-align: left;
+    background-color: #F48120;
+  }
+
+  .j-header-article h1 {
+    font-size: 1.25em!important;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 69%;
+  }
+
+  .j-header-article .j-oa {
+    display: inline-block;
+    width: 85%;
+    padding-top: 0;
+    max-width: 180px;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .j-header-article .oalink {
+    width: 30%;
+    display: inline-block;
+    text-align: right;
+  }
+
   .subscribe #email {
     padding: 1px 0.5em;
     font-size: 1em;
