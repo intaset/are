@@ -6,6 +6,7 @@
 {% include css/SpryValidationConfirm.css %}
 {% include css/SpryValidationCheckbox.css %}
 {% include css/SpryValidationTextarea.css %}
+{% include css/SpryValidationRadio.css %}
 {% include css/general.css %}
 {% include css/grid.css %}
 {% include css/flexslider.css %}
