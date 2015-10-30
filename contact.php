@@ -156,18 +156,18 @@ mail($my_email,$subject,$message,$headers);
 <nav id="slide-menu">
   <h1>Avestia Publishing</h1>
   <ul>
-    <li><a href="../about">About Us</a></li>
-    <li><a href="../ethics">Ethics in Publishing</a></li>
-    <li><a href="../openaccess">Open Access</a></li>
-    <li><a href="../editor">Become a Reviewer or an Editor</a></li>
-    <li><a href="../publishing">Your Publishing Needs</a></li>
-    <li><a href="../proceedings">Conference Proceedings</a></li>
-    <li><a href="../news">Latest News</a></li>
-    <li><a href="../guidelines">Author Guidelines</a></li>
-    <li><a href="../journals">Journals</a></li>
+    <li><a href="http://avestia.com/about">About Us</a></li>
+    <li><a href="http://avestia.com/ethics">Ethics in Publishing</a></li>
+    <li><a href="http://avestia.com/openaccess">Open Access</a></li>
+    <li><a href="http://avestia.com/editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="http://avestia.com/publishing">Your Publishing Needs</a></li>
+    <li><a href="http://avestia.com/proceedings">Conference Proceedings</a></li>
+    <li><a href="http://avestia.com/news">Latest News</a></li>
+    <li><a href="http://avestia.com/guidelines">Author Guidelines</a></li>
+    <li><a href="http://avestia.com/journals">Journals</a></li>
     <li><a href="http://amss.avestia.com/">Submission</a></li>
-    <li><a href="../copyright">Copyright</a></li>
-    <li><a href="../contact">Contact Us</a></li>
+    <li><a href="http://avestia.com/copyright">Copyright</a></li>
+    <li><a href="http://avestia.com/contact">Contact Us</a></li>
   </ul>
 </nav>
 
@@ -179,11 +179,11 @@ mail($my_email,$subject,$message,$headers);
 
     <div class="nav1">
       <nav>
-        <a href="/">Home</a>
+        <a href="http://avestia.com">Home</a>
         <a href="http://amss.avestia.com/">Submission</a>
-        <a href="../journals">Journals</a>
-        <a href="../ethics">Ethics in Publishing</a>
-        <a href="../guidelines">Author Guidelines</a>
+        <a href="http://avestia.com/journals">Journals</a>
+        <a href="http://avestia.com/ethics">Ethics in Publishing</a>
+        <a href="http://avestia.com/guidelines">Author Guidelines</a>
       </nav>
     </div>
 
@@ -194,11 +194,11 @@ mail($my_email,$subject,$message,$headers);
 
     <div class="nav2">
       <nav>
-        <a href="/">Home</a>
+        <a href="http://avestia.com">Home</a>
         <a href="http://amss.avestia.com/">Submission</a>
-        <a href="../journals">Journals</a>
-        <a href="../ethics">Ethics in Publishing</a>
-        <a href="../guidelines">Author Guidelines</a>
+        <a href="http://avestia.com/journals">Journals</a>
+        <a href="http://avestia.com/ethics">Ethics in Publishing</a>
+        <a href="http://avestia.com/guidelines">Author Guidelines</a>
       </nav>
     </div>
   </div>
@@ -299,8 +299,8 @@ mail($my_email,$subject,$message,$headers);
   <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
     <div class="unit-spacer">
       <ul class="footer-links">
-        <li><a href="/" class="body-link">Avestia Publishing</a></li>
-        <li><a href="../journals" class="body-link">Journals</a></li>
+        <li><a href="http://avestia.com" class="body-link">Avestia Publishing</a></li>
+        <li><a href="http://avestia.com/journals" class="body-link">Journals</a></li>
         <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
         <li><a href="../terms" class="body-link">Terms of Use</a></li>
         <li><a href="../sitemap" class="body-link">Sitemap</a></li>
@@ -323,7 +323,7 @@ mail($my_email,$subject,$message,$headers);
 
   <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
     <div class="unit-spacer social">
-    <form class="subscribe" action="../subscribe.php" method="post">
+    <form class="subscribe" action="../register.php" method="post">
             <span id="sprytextfield2"><input name="email" type="text" id="email" value="Join our mailing list"
               onblur="if (this.value == '') {this.value = 'Join our mailing list';}"
         onfocus="if (this.value == 'Join our mailing list') {this.value = '';}" ></span>
