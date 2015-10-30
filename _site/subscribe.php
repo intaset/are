@@ -90,7 +90,7 @@
 
     <div class="search-menu">
       <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
-      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
     </div>
 
     <div class="nav2">
@@ -119,7 +119,7 @@
   </div>
 </div>
       <div class="bg">
-        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+        <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
       </div>
     </div> <!-- Mobile -->
   </header>
@@ -174,7 +174,7 @@
 </div>
   
   <div class="grid">
-  <div class="main-content">
+  <div class="main-content j-home">
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
     <h2>Confirm Subscription</h2>
 

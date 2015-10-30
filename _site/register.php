@@ -95,7 +95,7 @@ if ($emailcheck2 != 0) {
 
     <div class="search-menu">
       <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
-      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
     </div>
 
     <div class="nav2">
@@ -124,7 +124,7 @@ if ($emailcheck2 != 0) {
   </div>
 </div>
       <div class="bg">
-        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+        <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
       </div>
     </div> <!-- Mobile -->
   </header>
@@ -462,7 +462,7 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
 
     <div class="search-menu">
       <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
-      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+      <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
     </div>
 
     <div class="nav2">
@@ -491,7 +491,7 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
   </div>
 </div>
       <div class="bg">
-        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
+        <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
       </div>
     </div> <!-- Mobile -->
   </header>
@@ -546,7 +546,7 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
 </div>
   
   <div class="grid">
-  <div class="main-content">
+  <div class="main-content j-home">
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
     <h2>Receive Updates</h2>
 
