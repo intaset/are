@@ -208,7 +208,7 @@ if ($emailcheck2 != 0) {
         <li><a href="/" class="body-link">Avestia Publishing</a></li>
         <li><a href="../journals" class="body-link">Journals</a></li>
         <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
-        <li><a href="../terms" class="body-link">Terms of Use</a></li>
+        <li><a href="http://avestia.com/terms" class="body-link">Terms of Use</a></li>
         <li><a href="../sitemap" class="body-link">Sitemap</a></li>
       </ul>
     </div>
@@ -575,7 +575,7 @@ mail($email, $subject, $message,  "FROM: $jName <no-reply@avestia.com>");
         <li><a href="/" class="body-link">Avestia Publishing</a></li>
         <li><a href="../journals" class="body-link">Journals</a></li>
         <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
-        <li><a href="../terms" class="body-link">Terms of Use</a></li>
+        <li><a href="http://avestia.com/terms" class="body-link">Terms of Use</a></li>
         <li><a href="../sitemap" class="body-link">Sitemap</a></li>
       </ul>
     </div>
