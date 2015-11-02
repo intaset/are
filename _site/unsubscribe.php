@@ -180,7 +180,7 @@
 </div>
   
   <div class="grid">
-  <div class="main-content">
+  <div class="main-content j-home">
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
     <h2>Confirm Unsubscription</h2>
 
@@ -516,7 +516,7 @@ slideshow: false,
 </div>
   
   <div class="grid">
-  <div class="main-content">
+  <div class="main-content j-home">
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
     <h2>Email Not Found</h2>
 
@@ -850,7 +850,7 @@ slideshow: false,
 </div>
   
   <div class="grid">
-  <div class="main-content">
+  <div class="main-content j-home">
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
     <h2>Unsubscribe from our Mailing List</h2>
 
