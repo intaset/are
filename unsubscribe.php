@@ -15,12 +15,12 @@
  while($row = mysql_fetch_array($result))
   {
         $jName = $row['jName'];
-	if($uniqueID == $row['uniqueID'] || $email == $row['email'])
-	{
-		if($jName == strtoupper(array_shift(explode(".",$_SERVER['HTTP_HOST'])))){
-		$IDValid=1;
-		$query = "DELETE from users WHERE (uniqueID = '$uniqueID' OR email = '$email') AND jName = '$jName'";
-		mysql_query($query);
+  if($uniqueID == $row['uniqueID'] || $email == $row['email'])
+  {
+    if($jName == strtoupper(array_shift(explode(".",$_SERVER['HTTP_HOST'])))){
+    $IDValid=1;
+    $query = "DELETE from users WHERE (uniqueID = '$uniqueID' OR email = '$email') AND jName = '$jName'";
+    mysql_query($query);
 ?>
 <!-- Confirm Unsubscribe -->
 <!DOCTYPE html>
@@ -184,7 +184,6 @@
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
     <h2>Confirm Unsubscription</h2>
 
-    <p class="body">Email already registered</p>
     <p class="body">You have been unsubscribed from our list. If you wish to receive updates again, please register your email address below.</p>
 
     <p class="body">&nbsp;</p>
@@ -354,8 +353,8 @@ slideshow: false,
 </body>
 </html>
 
-	<?php
-	}}}if ($IDValid == 0 && $email != NULL){
+  <?php
+  }}}if ($IDValid == 0 && $email != NULL){
         ?>
 
     <!-- Email Not Found -->
@@ -519,9 +518,14 @@ slideshow: false,
   <div class="main-content j-home">
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
     <h2>Email Not Found</h2>
-
-    <p class="body">Email already registered</p>
     <p class="body">The email you enetered does not match any of our records. Please make sure you are entering the correct email.</p>
+  
+  <form class="subscribe" action="../unsubscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Unsubscribe from our mailing list"
+              onblur="if (this.value == '') {this.value = 'Unsubscribe from our mailing list';}"
+        onfocus="if (this.value == 'Unsubscribe from our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
 
     <p class="body">&nbsp;</p>
     <p class="body">&nbsp;</p>
@@ -689,7 +693,7 @@ slideshow: false,
 </script>
 </body>
 </html>
-	<?php
+  <?php
 }else if ($IDValid == 0){
 ?>
 
@@ -854,7 +858,14 @@ slideshow: false,
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
     <h2>Unsubscribe from our Mailing List</h2>
 
-    <p class="body">Please enter your email below to unsubscribe from our mailing list</p>
+    <p class="body">Please enter your email below to unsubscribe from our mailing list:</p>
+  
+  <form class="subscribe" action="../unsubscribe.php" method="post">
+            <span id="sprytextfield2"><input name="email" type="text" id="email" value="Unsubscribe from our mailing list"
+              onblur="if (this.value == '') {this.value = 'Unsubscribe from our mailing list';}"
+        onfocus="if (this.value == 'Unsubscribe from our mailing list') {this.value = '';}" ></span>
+      <input type="submit" name="submit" value="Submit" class="form_button" />
+        </form>
 
     <p class="body">&nbsp;</p>
     <p class="body">&nbsp;</p>
@@ -1024,4 +1035,4 @@ slideshow: false,
 </html>
 <?php
 }
-	?> 
+  ?> 
